@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>3D printer calibrator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/ZeroClipboard.min.js"></script>
+  	<script src="js/controler.js"></script>
+</head>
+<body>
+	<h1>3D printer calibrator</h1>	
+	<div class="control-group">
+	  <label class="control-label" for="original">Original</label>
+	  <div class="controls">
+	    <input id="original" name="original" placeholder="#define DEFAULT_AXIS_STEPS_PER_UNIT {X,Y,Z,E}" class="input-xlarge" required="" type="text">	    
+	  </div>
+	
+	  <label class="control-label" for="realx">Reality</label>
+	  <div class="controls">
+	    <input id="real0" name="realx" placeholder="X" class="input-mini" required="" type="text">
+	    <input id="real1" name="realy" placeholder="Y" class="input-mini" required="" type="text">
+	    <input id="real2" name="realz" placeholder="Z" class="input-mini" required="" type="text">
+	    <input id="real3" name="reale" placeholder="E" class="input-mini" required="" type="text">	    
+	  </div>	
+	 
+	  <div class="controls">
+	    <button id="calculate" name="calculate" class="btn btn-primary">Caltucate</button>
+	  </div>
+	  <ul id="output"></ul>
+	</div>
+</body>
+</html>
