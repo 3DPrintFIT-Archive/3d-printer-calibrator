@@ -11,9 +11,9 @@ $(function () {
 			realNumbers[i] = $('#real' + i).val();
 		};
 
-		var x = 10 / realNumbers[0] * originalNubers[0];
-		var y = 10 / realNumbers[1] * originalNubers[1];
-		var z = 5 / realNumbers[2] * originalNubers[2];
+		var x = 100 / realNumbers[0] * originalNubers[0];
+		var y = 100 / realNumbers[1] * originalNubers[1];
+		var z = 50 / realNumbers[2] * originalNubers[2];
 		var e = 100 / (200 - realNumbers[3]) * originalNubers[3];
 
 		var precision = 3;
