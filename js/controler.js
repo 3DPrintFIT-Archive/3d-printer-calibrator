@@ -18,13 +18,17 @@ $(function () {
 
 		var precision = 3;
 
-		var calculated = '#define DEFAULT_AXIS_STEPS_PER_UNIT {' 
-			+ x.toFixed(precision) 
-			+ ',' + y.toFixed(precision) 
-			+ ',' + z.toFixed(precision) 
-			+ ',' + e.toFixed(precision) 
-			+ '}';
-		$('#output').prepend('<li>' + calculated + '</li>');
+		if(!realNumbers[0] || !realNumbers[1] || !realNumbers[2] || !realNumbers[3] || ! original){
+			alert('Fill in all inputs, please.');
+		} else {
+			var calculated = '#define DEFAULT_AXIS_STEPS_PER_UNIT {' 
+				+ x.toFixed(precision) 
+				+ ',' + y.toFixed(precision) 
+				+ ',' + z.toFixed(precision) 
+				+ ',' + e.toFixed(precision) 
+				+ '}';
+			$('#output').prepend('<li>' + calculated + '</li>');
+		}		
     });
 
  });
